@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+config.json
+orders.sqlite3*
+.env
+storage/plugins/fragment_stars/
+venv/
