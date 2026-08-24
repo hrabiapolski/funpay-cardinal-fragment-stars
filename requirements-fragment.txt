@@ -1,0 +1,2 @@
+# Install only inside the isolated Fragment virtual environment.
+pyfragment>=2026.3.4,<2027
