@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Create the isolated pyfragment runtime required by Fragment Stars."""
 
 from __future__ import annotations
