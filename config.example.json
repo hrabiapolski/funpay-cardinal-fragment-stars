@@ -1,0 +1,61 @@
+{
+  "enabled": true,
+  "paused": false,
+  "fragment": {
+    "seed": "",
+    "api_key": "",
+    "cookies": {
+      "stel_ssid": "",
+      "stel_dt": "",
+      "stel_token": "",
+      "stel_ton_token": ""
+    },
+    "wallet_version": "V5R1",
+    "api_provider": "tonapi",
+    "payment_method": "ton",
+    "show_sender": false,
+    "timeout_seconds": 45,
+    "dry_run": false
+  },
+  "runtime": {
+    "python_executable": "",
+    "helper_timeout_seconds": 180
+  },
+  "lot_filter": {
+    "require_marker": true,
+    "markers": [
+      "#fragment_stars"
+    ],
+    "subcategory_ids": []
+  },
+  "username": {
+    "field_ids": [
+      "player",
+      "username",
+      "telegram",
+      "telegram_username"
+    ],
+    "ask_in_chat_if_missing": true
+  },
+  "amount": {
+    "mode": "auto",
+    "fixed_stars_per_unit": 100,
+    "title_regex": "(?i)(\\d[\\d\\s]{0,10})\\s*(?:telegram\\s*)?(?:stars?|зв[её]зд)",
+    "minimum": 50,
+    "maximum": 1000000,
+    "allowed": []
+  },
+  "safety": {
+    "purchase_delay_seconds": 2,
+    "recover_unknown_paid_on_startup": false
+  },
+  "messages": {
+    "ask_username": "Заказ #{order_id} принят. Пришлите Telegram username получателя одним сообщением в формате @username. Не отправляйте номер телефона или ссылку-приглашение.",
+    "processing": "Username @{username} принят. Отправляю {stars} Telegram Stars через Fragment…",
+    "success": "Готово: {stars} Telegram Stars отправлены пользователю @{username}. Заказ #{order_id}. Транзакция: {txid}",
+    "submitted": "Транзакция на {stars} Telegram Stars для @{username} отправлена в сеть. Заказ #{order_id}. Транзакция: {txid}",
+    "invalid_username": "Не удалось найти получателя @{username}. Проверьте username и пришлите его ещё раз одним сообщением в формате @username.",
+    "manual_review": "Автовыдача заказа #{order_id} временно остановлена. Продавец уже получил уведомление; повторная покупка автоматически не выполняется, чтобы исключить двойную выдачу.",
+    "dry_run": "Тестовый режим: покупка {stars} Stars для @{username} по заказу #{order_id} успешно смоделирована. Реальная транзакция не отправлялась."
+  }
+}
